@@ -144,7 +144,7 @@ strong {
   border-top: 0.5vw solid #ffb902;
   border-bottom: 0.5vw solid #ffb902;
   display: grid;
-  margin: 10vw 7vw;
+  margin: 10vw auto;
   & span:first-child {
     margin: 0;
     margin-top: 10vw;
