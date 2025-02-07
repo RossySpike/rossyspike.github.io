@@ -21,15 +21,20 @@ a {
 }
 header {
   background-color: #000;
-  display: flex-column;
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
-  height: 10vh;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  animation: slide-up;
-  animation-timeline: scroll(root);
+
+  & .rotating-image {
+    width: 20vw;
+    margin: 0;
+    animation: rotate 5s infinite linear;
+    transform-style: preserve-3d;
+  }
   & span {
     position: relative;
     display: flex;
@@ -43,8 +48,8 @@ header {
     position: relative;
     animation: shrink 0.3s ease both;
 
+    margin-top: 0;
     filter: drop-shadow(0vw 0vw 0.5vw #ffb902);
-    animation-timeline: scroll(root);
     &::after {
       content: "";
       position: absolute;
@@ -163,7 +168,8 @@ strong {
       background-color: #fff;
       box-shadow: 1vw -1vw 0.1vw #ffb902;
 
-      display: flex-column;
+      display: flex;
+      flex-direction: column;
       animation: cards 2s ease-in-out infinite alternate;
       animation-delay: calc(0.3s * var(--i));
       & h3 {
@@ -186,7 +192,8 @@ strong {
   }
 }
 #why {
-  display: flex-column;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 
   & p {
@@ -248,7 +255,9 @@ strong {
 .footer {
   border-top: 0.5vw solid #ffb902;
   margin: 10vw 0;
-  display: flex-column;
+  display: flex;
+  flex-direction: column;
+
   & div {
     margin: 6vw 0;
     display: flex;
@@ -259,5 +268,14 @@ strong {
         min-width: 7vw;
       }
     }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }

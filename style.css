@@ -17,7 +17,8 @@ li {
   white-space: nowrap;
 }
 #bg {
-  display: flex-column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .intro-container {
@@ -162,12 +163,11 @@ li {
   }
 }
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100vw;
   border-top: 0.5vw solid #ffb902;
   margin: 10vw 0;
-  display: flex-column;
+  display: flex;
+  flex-direction: column;
   & div {
     margin-top: 6vw 0;
     display: flex;
@@ -178,5 +178,30 @@ li {
         min-width: 7vw;
       }
     }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+.rotating-image {
+  width: 20vw;
+  justify-content: center;
+  opacity: 0;
+  scale: 0;
+
+  animation:
+    rotate 5s infinite linear,
+    appear 1.3s ease forwards;
+  transform-style: preserve-3d;
+  animation-delay: 2.8s;
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }
