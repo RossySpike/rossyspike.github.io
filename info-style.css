@@ -30,7 +30,7 @@ header {
   z-index: 1;
 
   & .rotating-image {
-    width: 20vw;
+    width: 18vw;
     margin: 0;
     animation: rotate 5s infinite linear;
     transform-style: preserve-3d;
