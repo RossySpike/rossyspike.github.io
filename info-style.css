@@ -2,6 +2,7 @@
 body {
   background-color: #000;
   font-family: "Poppins";
+  margin: 0 0;
 }
 
 a {
@@ -67,9 +68,6 @@ header {
   margin-top: 10vw;
   display: grid;
   column-gap: 5vw;
-  animation-name: appear;
-  animation-timeline: view();
-  animation-range: -75%;
   & article {
     display: flex;
     margin: 2vw 5vw;
@@ -137,9 +135,6 @@ strong {
 #services {
   border-top: 0.5vw solid #ffb902;
   border-bottom: 0.5vw solid #ffb902;
-  animation-name: appear;
-  animation-timeline: view();
-  animation-range: -85%;
   display: grid;
   margin: 10vw 7vw;
   & span {
@@ -174,22 +169,9 @@ strong {
     scale: 1.1;
   }
 }
-@keyframes appear {
-  from {
-    opacity: 0.9;
-    scale: 0.6;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
 #why {
   display: flex-column;
   text-align: center;
-  animation-name: appear;
-  animation-timeline: view();
-  animation-range: -75%;
   & > div {
     display: flex;
     text-align: left;
