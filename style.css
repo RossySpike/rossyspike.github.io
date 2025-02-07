@@ -162,6 +162,9 @@ li {
   }
 }
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
   border-top: 0.5vw solid #ffb902;
   margin: 10vw 0;
   display: flex-column;
