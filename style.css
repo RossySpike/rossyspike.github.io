@@ -89,6 +89,7 @@ header{
   display: none; /* Safari and Chrome */
 }
 .slider img {
+  object-fit: contain;
 }
 .slider-nav {
   display: flex;
