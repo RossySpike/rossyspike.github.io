@@ -58,9 +58,12 @@ header{
 #welcome{
   margin: 0px 2rem 0px 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   & article{
+    flex: 1 1 300px;
+    min-width:200px
 
   & h2{
     animation: slide-left 0.5s ease forwards;
@@ -71,6 +74,7 @@ header{
   }
   }
   & img{
+    flex: 1 1 300px
     object-fit: cover;
 width:clamp(10rem, 2.857rem + 19.048vw, 20rem)
   }
