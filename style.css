@@ -75,7 +75,6 @@ header{
 .slider-wrapper {
   position: relative;
   margin: 0 auto;
-  width: 95%;
 }
 .slider {
   display: flex;
@@ -90,6 +89,7 @@ header{
   display: none; /* Safari and Chrome */
 }
 .slider img {
+  max-width:inherit;
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
