@@ -70,7 +70,7 @@ header{
 }
 
 #slide{
-  width:auto;
+  
 }
 .slider-wrapper {
   position: relative;
@@ -89,6 +89,7 @@ header{
   display: none; /* Safari and Chrome */
 }
 .slider img {
+  max-width:100%;
   object-fit: cover;
   position: sticky;
   scroll-snap-align: center;
