@@ -70,7 +70,7 @@ header{
 }
 
 #slide{
-  
+ padding:0; 
 }
 .slider-wrapper {
   position: relative;
