@@ -78,7 +78,7 @@ header{
 }
 .slider {
   display: flex;
-  aspect-ratio: 16/6.8;
+  aspect-ratio: 16/9;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -89,10 +89,9 @@ header{
   display: none; /* Safari and Chrome */
 }
 .slider img {
-  max-width:inherit;
   flex: 1 0 100%;
   scroll-snap-align: start;
-  object-fit: cover;
+  object-fit: contain;
 }
 .slider-nav {
   display: flex;
