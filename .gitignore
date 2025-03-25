@@ -1,1 +1,6 @@
 se-remonta/.git
+se-remonta/.gitignore
+se-remonta/node_modules
+se-remonta/package-lock.json
+se-remonta/package.json
+se-remonta/tsconfig.json
