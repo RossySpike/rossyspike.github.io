@@ -74,7 +74,7 @@ bttnClose.addEventListener('click', () => {
 //  });
 //}
 function findCombinationsIterative(arrays: number[][], target: number): number[][] {
-  const results: number[][] = [];
+  const results = [];
   let exit = false;
 
   const positions: number[] = new Array(arrays.length - 1);
