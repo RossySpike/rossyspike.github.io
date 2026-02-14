@@ -1131,15 +1131,16 @@
             return;
           }
           activityError.innerText = "";
+          const activityBody = {
+            pet: selectedPetId,
+            name: name,
+            times: Number(times),
+          };
+          if (desc) activityBody.description = desc; // solo incluir descripción si no está vacía
           try {
             const { res } = await request("/api/activity", {
               method: "POST",
-              body: JSON.stringify({
-                pet: selectedPetId,
-                name: name,
-                times: times,
-                description: desc || undefined,
-              }),
+              body: JSON.stringify(activityBody),
             });
             if (res.status === 201) {
               newActName.value = "";
@@ -1161,6 +1162,7 @@
           clearToken();
           currentUserId = null;
           selectedPetId = null;
+          userData.innerHTML = "";
           showAuth();
         });
 
